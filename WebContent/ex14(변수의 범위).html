@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>변수의 범위</h1>
+	
+</body>
+
+<script type="text/javascript">
+/* 
+function checkScope() {
+	var name = "local";		//	지역변수
+	console.log(name);
+}
+
+var name = "global";		//	전역변수
+	console.log(name);
+	
+	checkScope();
+	console.log(name);
+ */
+
+ var name = "global";
+ 
+ function checkScope() {
+	 name = "local";
+ }
+
+ checkScope();
+ console.log(name);
+ 
+	
+</script>
+
+</html>

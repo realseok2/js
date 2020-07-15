@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<h1>함수 실행 순서</h1>
+
+</body>
+
+<script type="text/javascript">
+	console.log("----함수실행순서-----");
+
+	var test = function() {
+		console.log("testA함수입니다.");	
+	}
+
+	function test() {
+		console.log("testB함수입니다.");
+	}
+	
+	test();
+
+</script>
+
+
+</html>

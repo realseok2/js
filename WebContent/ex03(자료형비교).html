@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>변수선언</h1>
+
+</body>
+
+<script type="text/javascript">
+	console.log("----변수선언-----");
+	
+	//	모두 var를 사용합니다.
+	var no	= 3;						//	number no;	(x)
+	var str	= "apple";					//	String str;	(x)
+	var boo	= true;						//	number boo;	(x)
+
+	var no01;
+	no01 = 3;
+	
+	
+	var person = "강동원";
+	console.log(person);
+	var person = "변요한";				//	덮어쓰기됩니다. 조심!!
+	console.log(person);
+
+</script>
+
+
+
+<script type="text/javascript">
+	console.log("----자료형이 뭐게~~~?----");
+	
+	//	typeof를 사용하면 자료형을 확인 할 수 있습니다.
+	//	자료형은 대입시 결정됩니다. --> 덮어쓰기가 됩니다.
+	var data;
+	console.log(typeof data);			//	undefined
+	
+	data = 15;
+	console.log(typeof data);			//	undefined --> number
+
+	data = "하이!"
+	console.log(typeof data);			//	undefined --> number --> String
+
+	data = true;
+	console.log(typeof data);			// undefined --> number --> String --> boolean
+</script>
+
+
+
+<script type="text/javascript">
+	console.log("----undefined와 null의 차이 비교----");
+	
+	var myVar01;
+	var myVar02 = null;
+	
+	console.log(myVar01);				//	undefined
+	console.log(myVar02);				//	null
+	
+</script>
+
+
+
+<script type="text/javascript">
+	console.log("----동등연산자와 일치연산자 비교----");
+	
+	console.log("123" == 123);			//	동등연산자	true				-->	보통수준의 비교
+	console.log("123" === 123);			//	일치연산자	false(자료형이 다릅니다.)	--> 더욱 엄격한 비교
+	
+	console.log(myVar01 == myVar02);	//	undefined와 null의 비교	true
+	console.log(myVar01 === myVar02);	//	undefined와 null의 비교	false
+	
+	//	빈칸은 false와 0을 내포하고 있다. 또한 0은 false의 값을 내포하고 있다.
+	console.log('' == false);			//	true
+	console.log('' == 0);				//	true
+	console.log(0 == false);			//	true
+	console.log('');
+
+</script>
+
+</html>
