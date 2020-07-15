@@ -46,19 +46,20 @@
 			//	left + right
 			//	sum = left + right
 			
-			var left = document.getElementById("left");
-			var leftValue = left.value;
-			console.log(leftValue);
+			var left = document.getElementById("left");		//	첫번째 칸을 left라는 이름으로 지정
+			var leftValue = left.value;						//	첫번째 칸에 입력된 값의 value를 leftValue에 담아줍니다.
+			console.log(leftValue);							//	담긴 leftValue 값을 출력
 			
 			
-			var right = document.getElementById("right");
-			var rightValue = right.value;
-			console.log(rightValue);
+			var right = document.getElementById("right");	//	두번째 칸을 right라는 이름으로 지정
+			var rightValue = right.value;					//	두번째 칸에 입력된 값의 value를 rightValue에 담아줍니다.
+			console.log(rightValue);						//	담긴 rightValue 값을 출력
 			
-			var sum = document.getElementById("sum");
+			var sum = document.getElementById("sum");		//	세번째 칸을 sum이라는 이름으로 지정
 			console.log(sum);
 //			console.log(typeof leftValue);					//	형태가 String으로 되어있어서 left와 right를 문자로 인식하고 있습니다.
 															//	따라서 parseInt를 사용하여 변환시켜주어야 합니다.
+			
 			sum.value = parseInt(leftValue) + parseInt(rightValue);
 			
 		};
